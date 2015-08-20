@@ -1,0 +1,53 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	background-image: linear-gradient(rgb(137,95,203), rgb(72,127,236));
+	color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+	#moist-text{
+		font-size:25px;
+	}
+	#light i{
+		vertical-align:middle;
+	}
+	#light{
+		font-size:18px;
+	}
+
+svg{
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+}
+#mask{
+	width: 100%;
+	height: 450px;
+}
+#alpha{
+	fill: rgb(255,255,255);
+	width: 100%;
+	height:inherit;
+}
+#moist-value{
+	fill:black;
+	font-size:120px;
+    text-anchor: middle;
+}
+#moist-img{
+	mask: url(#mask);
+	width: 100%;
+	height:inherit;
+}

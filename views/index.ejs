@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/javascript.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <svg>
+        <defs>
+        <mask id="mask">
+          <rect id="alpha" x="0" y="0" />
+          <text id="moist-value" x="50%" y="320"><%= moist %>%</text>
+        </mask>
+        </defs>
+        <image id="moist-img" x="0" y="0" xlink:href="/images/drop.png" />
+      </svg>
+    	<p id="moist-text">서버로부터 데이터를 가져오고 있습니다...</p>
+	    <p id="light">
+	    	<i id="light-icon" class="fa fa-sun-o fa-2x"></i>
+	    	<span id="light-value"><%= light %>%</span>
+	    	<span id="light-text">서버로부터 데이터를 가져오고 있습니다...</span>
+	    </p>
+    </div>
+  </body>
+</html>
